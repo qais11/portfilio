@@ -57,7 +57,7 @@ cursor: pointer;
 .background-img{
   height: 653px;
   width: 100%;
-  background-image: url('https://qais11.github.io/portfilio/assets/1.jpg');
+  background-image: url('/assets/1.jpg');
   background-size: cover;
   background-position: center center;
 
