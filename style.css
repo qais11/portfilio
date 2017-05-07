@@ -124,11 +124,10 @@ nav {
 .projects-imgs {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .projects-imgs>div {
-    width: 300px;
-    height: 225px;
     background-color: white;
     border-radius: 10px;
 }
@@ -175,6 +174,12 @@ nav {
     width: 90px;
     height: 100%;
 }
+@media (max-width:768px) {
+  .row>img{
+    width: 70px;
+    height: 80%;
+  }
+}
 
 .skills-title {
     font-size: 40px;
@@ -216,7 +221,11 @@ nav {
     border: 5px solid white;
     height: 100%;
 }
-
+@media (max-width:768px) {
+  .img-container>img {
+      height: 90%;
+  }
+}
 .about-desc {
     margin: 60px auto;
     width: 60%;
@@ -285,6 +294,11 @@ footer {
     font-size: 50px;
     padding: 10px;
 }
+@media (max-width:768px) {
+  .s-media-container>ul>li>a{
+  font-size: 30px;
+  }
+}
 
 .projects-imgs>div:hover {
     cursor: pointer;
@@ -339,9 +353,10 @@ footer {
 .burger-container {
     width: 50px;
     height: 40px;
-    float: right;
     margin: 15px;
+    float: right;
     display: none;
+    right: 40px;
 }
 
 .burger-container>img {
