@@ -36,7 +36,9 @@ $(document).ready(function(){
     $('#skema').click(function(){
       $('.project_3').slideDown('fast')
     })
-
+    $('.resume').click(function(){
+      $('.resume-page').slideDown('fast')
+    })
 
 
 
@@ -51,4 +53,22 @@ $(document).ready(function(){
     $('#close-3').click(function(){
       $('.project_3').slideUp('fast')
     })
+    $('#close-4').click(function(){
+      $('.resume-page').slideUp('fast')
+    })
+
+    $('.burger-container').click(function(){
+      $('.nav-btns').slideToggle()
+    })
+
+    var mouse_is_inside = false;
+    $('.burger-container').click(function(){
+        mouse_is_inside=true;
+    }, function(){
+        mouse_is_inside=false;
+    });
+
+    $("body").mouseup(function(){
+        if(! mouse_is_inside) $('.nav-btns').hide();
+    });
 })
