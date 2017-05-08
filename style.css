@@ -377,13 +377,28 @@ footer {
     .nav-btns>button {
         display: block;
     }
+    .nav-container{
+      margin: 0;
+    }
+    .projects-imgs{
+      padding: 5px;
+      width: 100%;
+    }
+    .about-title>p{
+      font-size: 30px;
+    }
+    .about-desc{
+      width: 100%;
+    }
 }
 
 @media (max-width:445px) {
     .name {
         font-size: 45px;
+        line-height: 50px;
     }
     .position {
         font-size: 30px;
+        line-height: 50px;
     }
 }
