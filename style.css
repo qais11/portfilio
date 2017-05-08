@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 *:focus {
@@ -16,7 +17,6 @@ nav {
     background-color: #222;
     height: 70px;
     width: 100%;
-    justify-content: space-around;
     position: fixed;
 }
 
@@ -27,13 +27,11 @@ nav {
 }
 
 .nav-btns {
-    right: 0;
-    height: 100%;
     float: right;
 }
 
 .nav-btns>button {
-    background: none;
+    background: transparent;
     border: none;
     padding: 20px;
     color: white;
@@ -44,6 +42,7 @@ nav {
     line-height: 20px;
     height: 75%;
     margin: 9px auto;
+    display: inline-block;
 }
 
 .nav-btns>button:hover {
@@ -122,24 +121,32 @@ nav {
 }
 
 .projects-imgs {
+    margin: auto;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 40px;
 }
 
 .projects-imgs>div {
     background-color: white;
     border-radius: 10px;
+    width: 300px;
+}
+
+.projects-imgs>div:hover {
+    cursor: pointer;
+    background-color: rgba(254, 209, 54, 0.5);
+}
+
+.projects-imgs>div>img {
+    height: 127px;
+    width: 100%
 }
 
 .project-desc {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     color: #777
-}
-
-.projects-imgs>div>img {
-    height: 127px;
 }
 
 .project-name {
@@ -166,19 +173,13 @@ nav {
     flex-wrap: wrap;
     height: 80px;
     width: 80%;
-    padding: 70px auto;
+    /*padding: 70px auto;*/
     margin: 60px auto;
 }
 
 .row>img {
     width: 90px;
     height: 100%;
-}
-@media (max-width:768px) {
-  .row>img{
-    width: 70px;
-    height: 80%;
-  }
 }
 
 .skills-title {
@@ -221,11 +222,7 @@ nav {
     border: 5px solid white;
     height: 100%;
 }
-@media (max-width:768px) {
-  .img-container>img {
-      height: 90%;
-  }
-}
+
 .about-desc {
     margin: 60px auto;
     width: 60%;
@@ -241,7 +238,6 @@ nav {
 .resume {
     margin: auto;
     text-align: center;
-    padding-top: 10px;
 }
 
 a {
@@ -294,18 +290,8 @@ footer {
     font-size: 50px;
     padding: 10px;
 }
-@media (max-width:768px) {
-  .s-media-container>ul>li>a{
-  font-size: 30px;
-  }
-}
 
-.projects-imgs>div:hover {
-    cursor: pointer;
-    background-color: rgba(254, 209, 54, 0.5);
-}
-
-.project_1, .project_2, .project_3, .resume-page {
+.project_1, .project_2, .project_3 {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -344,12 +330,6 @@ footer {
     margin: auto;
 }
 
-#resume_viewer {
-    border: none;
-    background-color: none;
-    color: yellow;
-}
-
 .burger-container {
     width: 50px;
     height: 40px;
@@ -363,29 +343,47 @@ footer {
     width: 100%;
     height: 100%;
 }
-@media (min-width: 768px) {
-  .nav-btns{
-    display: inline-block!important;
-  }
-}
-@media (max-width: 768px) {
-  .nav-btns{
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #222;
-    height: auto;
-    width: 320px;
-    text-align: left;
-    border-radius: 13px;
-  }
-  .nav-btns > * {
+
+.nav-btns>* {
     display: block;
     margin: 0;
-  }
+}
 
-  .burger-container{
-    display: inline-block;
-  }
+@media (max-width:768px) {
+    .burger-container {
+        display: inline-block;
+    }
+    .nav-btns {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #222;
+        height: auto;
+        width: 320px;
+        text-align: left;
+        border-radius: 13px;
+    }
+    .s-media-container>ul>li>a {
+        font-size: 30px;
+    }
+    .img-container>img {
+        height: 90%;
+    }
+    .row>img {
+        width: 70px;
+        height: 80%;
+    }
+    .nav-btns>button {
+        display: block;
+    }
+}
+
+@media (max-width:445px) {
+    .name {
+        font-size: 45px;
+    }
+    .position {
+        font-size: 30px;
+    }
 }
