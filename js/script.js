@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
 
-    //--------------btton to close the project details -------//
+    //--------btton to close the project details ------//
 
     $('#close').click(function() {
         $('.project_1').slideUp('fast')
