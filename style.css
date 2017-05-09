@@ -298,6 +298,7 @@ footer {
     z-index: 100;
     background: white;
     display: none;
+    overflow-y: scroll;
 }
 
 #close, #close-2, #close-3, #close_4 {
