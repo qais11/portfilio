@@ -292,16 +292,16 @@ footer {
 }
 
 .project_1, .project_2, .project_3 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 100;
-    background: white;
+    background-color: #eee;
     display: none;
     overflow-y: scroll;
 }
 
-#close, #close-2, #close-3, #close_4 {
+#close, #close-2, #close-3 {
     position: absolute;
     top: 15px;
     right: 15px;
