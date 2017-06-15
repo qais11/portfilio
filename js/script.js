@@ -37,6 +37,9 @@ $(document).ready(function() {
     $('#skema').click(function() {
         $('.project_3').slideDown('fast')
     })
+    $('#porfolioGame').click(function() {
+        $('.project_4').slideDown('fast')
+    })
 
     //--------------showing the project detailes -------//
 
@@ -53,6 +56,9 @@ $(document).ready(function() {
     })
     $('#close-3').click(function() {
         $('.project_3').slideUp('fast')
+    })
+    $('#close-4').click(function() {
+        $('.project_4').slideUp('fast')
     })
     //--------------button to close the project details -------//
 
