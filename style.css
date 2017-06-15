@@ -306,7 +306,7 @@ footer {
   height: 100%;
   z-index: 100;
   background-color: #eee;
-  display: none !important;
+  display: none;
   overflow-y: scroll;
 }
 
