@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     //--------------automaticlly scrolling down -------//
     $("#project").click(function() {
@@ -84,5 +85,4 @@ $(document).ready(function() {
         $navBtns.removeAttr('style')
     })
     //--------------burger menu -------//
-
 })
